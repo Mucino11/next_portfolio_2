@@ -58,17 +58,17 @@ export default function Home() {
           <div className="about-me-content">
             <h2 className="about-me-h2">About Me</h2>
             <p className="about-me-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
-              libero dolor. Fusce consectetur turpis sapien, at convallis lorem
-              ultrices vitae. Suspendisse sollicitudin congue magna non egestas.
-              Pellentesque semper rhoncus libero non convallis. Integer eget
-              ullamcorper risus. Ut diam risus, mollis quis lorem eget, ultrices
-              imperdiet sapien. Nunc ultricies felis a risus ultricies porta.
-              Sed placerat egestas massa a pellentesque. Proin nec nisl in odio
-              lobortis porttitor. Fusce sodales leo purus, et auctor eros
-              lobortis ut. Nunc consequat est ut dui ullamcorper ultrices.
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas.
+              I am Musa Jalloh, a third-year Information Systems student at
+              Østfold University College, specializing in web development and
+              cybersecurity. I have gained valuable leadership experience in
+              previous roles as Assistant Head Chef and Team Leader in Egon
+              Restaurant. <br />
+              <br /> My passion lies in software development, and I am known for
+              being resourceful, hardworking, and a strong team player. During
+              my time as Assistant Head Chef, I was involved in the recruitment
+              process, played a key role in training new hires, and collaborated
+              with the Head Chef on tasks such as stock management, invoicing,
+              and scheduling.
             </p>
             <a href="resume">
               {" "}
