@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link"; // Import Link component from Next.js
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Skill from "@/components/Skills";
@@ -8,6 +9,7 @@ type Project = {
   description: string;
   status: string;
   image: string;
+  githubLink: string; // Added missing type definition
 };
 
 export default function Home() {
@@ -53,12 +55,15 @@ export default function Home() {
               </article>
             ))}
           </section>
+
+          {/* Use Link for internal navigation */}
           <div>
-            <a href="/project">
+            <Link href="/project" passHref>
               <button className="button-dark">See more projects</button>
-            </a>
+            </Link>
           </div>
         </section>
+
         <section className="about-me-section">
           <img
             src="images/musa.jpeg"
@@ -80,14 +85,15 @@ export default function Home() {
               with the Head Chef on tasks such as stock management, invoicing,
               and scheduling.
             </p>
+            {/* Use Link for internal navigation */}
             <div>
-              <a href="resume">
-                {" "}
+              <Link href="/resume" passHref>
                 <button className="button-light">See resume</button>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
+
         <Skill />
       </main>
 
