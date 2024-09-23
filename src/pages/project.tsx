@@ -34,7 +34,7 @@ export default function Project() {
           style={{ width: "300px", height: "auto" }}
         />
         <a href={project.githubLink}>
-          <button className="button-dark">Project on Github</button>
+          <button className="button-dark">See Project</button>
         </a>
       </article>
     );

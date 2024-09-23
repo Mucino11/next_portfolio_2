@@ -10,16 +10,21 @@ export default function Resume() {
         <div className="profile">
           <img src="/images/musa.jpeg" alt="Musa Jalloh" />
           <h1>Musa Jalloh</h1>
+          <h2>
+            <em>Web Developer and Designer</em>
+          </h2>
           <p>
-            <em>Frontend Developer and Web Designer</em>
-          </p>
-          <p>
-            I am a frontend software developer and web designer who loves
-            driving and traveling to new countries.
+            I am Musa Jalloh, a third-year Information Systems student at
+            Østfold University College, specializing in web development and
+            cybersecurity. With leadership experience in roles like Assistant
+            Head Chef and Team Leader, I bring strong problem-solving skills,
+            teamwork, and a passion for software development to every project.
+            My diverse background has equipped me with both technical and
+            managerial expertise, making me a resourceful and hardworking
+            contributor.
           </p>
         </div>
-        <section />{" "}
-        {/* This section tag should be removed or closed properly */}
+        <section />
         <hr />
         <section className="education">
           <h2>Education</h2>

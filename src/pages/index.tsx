@@ -32,6 +32,16 @@ export default function Home() {
           <section className="grid-project-section">
             {/* Map over the fetched projects and create project cards */}
             {projects.map((project, index) => (
+              // <article key={index} className="project-card">
+              //   <h2 className="project-h2">Name: {project.name}</h2>
+              //   <p>Description: {project.description}</p>
+              //   <p>Status: {project.status}</p>
+              //   <img
+              //     src={project.image}
+              //     alt={`${project.name} image`}
+              //     className="portfolio-image"
+              //   />
+              // </article>
               <article key={index} className="project-card">
                 <h2 className="project-h2">Name: {project.name}</h2>
                 <p>Description: {project.description}</p>
@@ -41,6 +51,14 @@ export default function Home() {
                   alt={`${project.name} image`}
                   className="portfolio-image"
                 />
+
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="button-dark">See Project</button>
+                </a>
               </article>
             ))}
           </section>
