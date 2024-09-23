@@ -139,7 +139,7 @@ p {
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: block;
-  text-align: center;
+  text-align: left;
   margin: 2rem auto;
 }
 .see-more-button:hover {

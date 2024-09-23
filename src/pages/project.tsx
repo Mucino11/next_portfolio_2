@@ -11,13 +11,13 @@ type Project = {
 };
 
 export default function Project() {
-  const [projects, setProjects] = useState<Project[]>([]);
+  const [additionalProjects, setAdditionalProjects] = useState<Project[]>([]);
 
   // Fetch the project data from the public folder
   useEffect(() => {
     fetch("/data/project.json")
       .then((response) => response.json())
-      .then((data) => setProjects(data.projects))
+      .then((data) => setAdditionalProjects(data.additionalProjects))
       .catch((error) => console.error("Error fetching projects:", error));
   }, []);
 
@@ -44,11 +44,11 @@ export default function Project() {
     <>
       <Navbar />
       <main className="project-main">
-        <h1>My Projects</h1>
+        <h1>Projects</h1>
         {/* This section is the grid layout that wraps all project cards */}
         <section className="grid-project-section">
-          {/* Map over the projects and generate project cards */}
-          {projects.map((project) => createProjectCard(project))}
+          {/* Map over the additional projects and generate project cards */}
+          {additionalProjects.map((project) => createProjectCard(project))}
         </section>
       </main>
       <Footer />
