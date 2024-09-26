@@ -8,6 +8,7 @@ type Project = {
   description: string;
   status: string;
   image: string;
+  githubLink: string;
 };
 
 export default function Home() {
