@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Skill from "@/components/Skills";
+import AddNewProject from "@/components/Form";
 
 type Project = {
   name: string;
@@ -13,6 +14,7 @@ type Project = {
 
 export default function Home() {
   const [projects, setProjects] = useState<Project[]>([]);
+  const [additionalProjects, setAdditionalProjects] = useState<Project[]>([]); // Step 1: Add state for additionalProjects
 
   // Fetch the project data from the public folder
   useEffect(() => {
@@ -25,11 +27,9 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-
       <main>
         <section>
           <h1 className="project-section-h1">My Projects</h1>
-
           <section className="grid-project-section">
             {/* Map over the fetched projects and create project cards */}
             {projects.map((project, index) => (
@@ -54,12 +54,21 @@ export default function Home() {
               </article>
             ))}
           </section>
+
           <div>
             <a href="/project">
               <button className="button-dark">See more projects</button>
             </a>
           </div>
+          {/* Step 2: Add the AddNewProject component with props */}
+          <AddNewProject
+            projects={projects}
+            setProjects={setProjects}
+            additionalProjects={additionalProjects}
+            setAdditionalProjects={setAdditionalProjects}
+          />
         </section>
+
         <section className="about-me-section">
           <img
             src="images/musa.jpeg"
@@ -83,7 +92,6 @@ export default function Home() {
             </p>
             <div>
               <a href="resume">
-                {" "}
                 <button className="button-light">See resume</button>
               </a>
             </div>
