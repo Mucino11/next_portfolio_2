@@ -14,13 +14,13 @@ export default function AddNewProject({
     githubLink: "",
   });
 
-  // Handle input change
+  // handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setNewProject({ ...newProject, [name]: value });
   };
 
-  // Handle form submission
+  // handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 

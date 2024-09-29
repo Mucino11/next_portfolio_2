@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Skill from "@/components/Skills";
 import AddNewProject from "@/components/Form";
+import Link from "next/link";
 
 type Project = {
   name: string;
@@ -14,7 +15,7 @@ type Project = {
 
 export default function Home() {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [additionalProjects, setAdditionalProjects] = useState<Project[]>([]); // Step 1: Add state for additionalProjects
+  const [additionalProjects, setAdditionalProjects] = useState<Project[]>([]); // Add state for additionalProjects
 
   // Fetch the project data from the public folder
   useEffect(() => {
@@ -56,10 +57,11 @@ export default function Home() {
           </section>
 
           <div>
-            <a href="/project">
+            <Link href="/project">
               <button className="button-dark">See more projects</button>
-            </a>
+            </Link>
           </div>
+
           {/* Step 2: Add the AddNewProject component with props */}
           <AddNewProject
             projects={projects}
