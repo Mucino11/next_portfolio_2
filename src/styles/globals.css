@@ -80,11 +80,7 @@ p {
   font-size: 1.2rem;
 }
 /* My project section */
-/* .project-section-h1 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 3rem;
-} */
+
 .my-project-section {
   background-color: var(--background-white);
   padding-left: 10%;

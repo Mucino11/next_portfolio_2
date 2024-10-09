@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Skill from "@/components/Skills";
-import AddNewProject from "@/components/Form";
 import Link from "next/link";
+// import Image from "next/image";
 
 type Project = {
   name: string;
@@ -15,8 +15,6 @@ type Project = {
 
 export default function Home() {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [additionalProjects, setAdditionalProjects] = useState<Project[]>([]); // Add state for additionalProjects
-
   // Fetch the project data from the public folder
   useEffect(() => {
     fetch("/data/project.json")
@@ -43,6 +41,12 @@ export default function Home() {
                   alt={`${project.name} image`}
                   className="portfolio-image"
                 />
+
+                {/* <Image
+                  src={project.image}
+                  alt={`${project.name} image`}
+                  className="portfolio-image"
+                /> */}
                 <div>
                   <a
                     href={project.githubLink}
@@ -61,20 +65,14 @@ export default function Home() {
               <button className="button-dark">See more projects</button>
             </Link>
           </div>
-
-          {/* Step 2: Add the AddNewProject component with props */}
-          <AddNewProject
-            projects={projects}
-            setProjects={setProjects}
-            additionalProjects={additionalProjects}
-            setAdditionalProjects={setAdditionalProjects}
-          />
         </section>
 
         <section className="about-me-section">
-          <img
-            src="images/musa.jpeg"
+          <img //could figure out how to use the next Image component
+            src="/images/musa.jpeg"
             alt="Musa Jalloh"
+            width={400}
+            height={400}
             className="about-me-image"
           />
           <div className="about-me-content">

@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Skill from "@/components/Skills";
+import Image from "next/image";
 
 export default function Resume() {
   return (
@@ -8,7 +9,13 @@ export default function Resume() {
       <Navbar />
       <section className="resume">
         <div className="profile">
-          <img src="/images/musa.jpeg" alt="Musa Jalloh" />
+          <Image
+            src="/images/musa.jpeg" // Ensure the path starts with "/"
+            alt="Musa Jalloh"
+            width={400} // Example width (adjust to your needs)
+            height={400} // Example height (adjust to your needs)
+            className="about-me-image"
+          />
           <h1>Musa Jalloh</h1>
           <h2>
             <em>Web Developer and Designer</em>
