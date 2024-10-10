@@ -28,7 +28,7 @@ export default function Home() {
       <Navbar />
       <main>
         <section>
-          <h1 className="project-section-h1">This is a text</h1>
+          <h1 className="project-section-h1">My Projects</h1>
           <section className="grid-project-section">
             {/* Map over the fetched projects and create project cards */}
             {projects.map((project, index) => (
