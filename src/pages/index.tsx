@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Skill from "@/components/Skills";
 import Link from "next/link";
-// import Image from "next/image";
+import Image from "next/image";
 
 type Project = {
   name: string;
@@ -36,17 +36,21 @@ export default function Home() {
                 <h2 className="project-h2">Name: {project.name}</h2>
                 <p>Description: {project.description}</p>
                 <p>Status: {project.status}</p>
-                <img
-                  src={project.image}
-                  alt={`${project.name} image`}
-                  className="portfolio-image"
-                />
 
-                {/* <Image
+                {/* use Image component */}
+                {/* <img
                   src={project.image}
                   alt={`${project.name} image`}
                   className="portfolio-image"
                 /> */}
+
+                <Image
+                  src={project.image}
+                  alt={`${project.name} image`}
+                  width={300}
+                  height={200}
+                  className="portfolio-image"
+                />
                 <div>
                   <a
                     href={project.githubLink}
@@ -68,13 +72,15 @@ export default function Home() {
         </section>
 
         <section className="about-me-section">
-          <img //could figure out how to use the next Image component
-            src="/images/musa.jpeg"
-            alt="Musa Jalloh"
-            width={400}
-            height={400}
-            className="about-me-image"
-          />
+          <div>
+            <Image
+              src="/images/musa.jpeg"
+              alt="project-img"
+              width={400}
+              height={400}
+            />
+          </div>
+
           <div className="about-me-content">
             <h2 className="about-me-h2">About Me</h2>
             <p className="about-me-p">

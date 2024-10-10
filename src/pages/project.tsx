@@ -32,11 +32,15 @@ export default function Project() {
         <h2>{project.name}</h2>
         <p>{project.description}</p>
         <p>Status: {project.status}</p>
+
         <Image
           src={project.image}
           alt="project-img"
-          style={{ width: "300px", height: "auto" }}
+          width={400}
+          height={400}
+          // style={{ width: "300px", height: "auto" }}
         />
+
         <a href={project.githubLink}>
           <button className="button-dark">See Project</button>
         </a>
