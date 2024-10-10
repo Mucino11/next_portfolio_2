@@ -15,11 +15,11 @@
       "githubLink": "https://xd.adobe.com/view/b04280ca-e612-428e-b683-7052c3bfacf3-e511/"
     },
     {
-      "name": "Next Media Agency",
-      "description": "This is a Wordpress website, build using elementor",
+      "name": "Film Database",
+      "description": "This project is a film database; my main learning objective of this project was to learn how to get data from an external database using the fetch method, handle asynchronous requests, manage state with React hooks, and implement search functionality to enhance user experience.",
       "status": "complete",
-      "image": "/images/next-media-agency.png",
-      "githubLink": "https://nextmediaagency.musajalloh.com/"
+      "image": "/images/film_database.png",
+      "githubLink": "https://github.com/Mucino11/film-database.git"
     }
   ],
   "additionalProjects": [
@@ -45,11 +45,11 @@
       "githubLink": "https://nextmediaagency.musajalloh.com/"
     },
     {
-      "name": "Coup d'etat in Africa",
-      "description": "A school project using journalism and technology to tell stories about thing happening around the world",
-      "status": "Complete",
-      "image": "/images/coup-in-africa.png",
-      "githubLink": "https://github.com/Mucino11/coup-d-etat-in-africa.git"
+      "name": "Film Database",
+      "description": "This project is a film database; my main learning objective of this project was to learn how to get data from an external database using the fetch method, handle asynchronous requests, manage state with React hooks, and implement search functionality to enhance user experience.",
+      "status": "complete",
+      "image": "/images/film_database.png",
+      "githubLink": "https://github.com/Mucino11/film-database.git"
     }
   ]
 }
