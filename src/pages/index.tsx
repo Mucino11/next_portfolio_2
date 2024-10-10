@@ -71,6 +71,7 @@ export default function Home() {
               alt="project-img"
               width={400}
               height={400}
+              className="about-me-image"
             />
           </div>
 
