@@ -28,7 +28,7 @@ export default function Home() {
       <Navbar />
       <main>
         <section>
-          <h1 className="project-section-h1">My Projects</h1>
+          <h1 className="project-section-h1">This is a text</h1>
           <section className="grid-project-section">
             {/* Map over the fetched projects and create project cards */}
             {projects.map((project, index) => (
@@ -36,13 +36,6 @@ export default function Home() {
                 <h2 className="project-h2">Name: {project.name}</h2>
                 <p>Description: {project.description}</p>
                 <p>Status: {project.status}</p>
-
-                {/* use Image component */}
-                {/* <img
-                  src={project.image}
-                  alt={`${project.name} image`}
-                  className="portfolio-image"
-                /> */}
 
                 <Image
                   src={project.image}
