@@ -74,7 +74,7 @@ export default function Home() {
               className="about-me-image"
             />
           </div>
-
+          {/* test */}
           <div className="about-me-content">
             <h2 className="about-me-h2">About Me</h2>
             <p className="about-me-p">
