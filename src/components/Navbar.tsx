@@ -1,13 +1,28 @@
-// components/Navbar.js
+import { useState } from "react";
 import Link from "next/link";
+import { FaBars, FaTimes } from "react-icons/fa"; // Optional: using FontAwesome icons
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navigation-bar">
-      <ul className="nav-list">
-        <li>
-          <Link href="/">Musa Jalloh</Link>
-        </li>
+      {/* Logo */}
+      <div className="logo">
+        <Link href="/">Musa Jalloh</Link>
+      </div>
+
+      {/* Hamburger Icon */}
+      <button className="menu-toggle" onClick={toggleMenu}>
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      {/* Navigation Links */}
+      <ul className={`nav-list ${isOpen ? "open" : ""}`}>
         <li>
           <Link href="/">Home</Link>
         </li>
