@@ -78,9 +78,9 @@ export default function Home() {
           <div className="about-me-content">
             <h2 className="about-me-h2">About Me</h2>
             <p className="about-me-p">
-              I am Musa Jalloh, a third-year Information Systems student at
-              Østfold University College, specializing in web development and
-              cybersecurity. I have gained valuable leadership experience in
+              I am Musa Jalloh, a new graduate in Information Systems student
+              from Østfold University College, specialized in web development
+              and cybersecurity. I have gained valuable leadership experience in
               previous roles as Assistant Head Chef and Team Leader in Egon
               Restaurant. <br />
               <br /> My passion lies in software development, and I am known for

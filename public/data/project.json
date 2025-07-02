@@ -37,13 +37,7 @@
       "image": "/images/big_lemon.png",
       "githubLink": "https://github.com/Mucino11/big_lemon_new.git"
     },
-    {
-      "name": "Next Media Agency",
-      "description": "This is a Wordpress website, build using elementor",
-      "status": "complete",
-      "image": "/images/next-media-agency.png",
-      "githubLink": "https://nextmediaagency.musajalloh.com/"
-    },
+
     {
       "name": "Film Database",
       "description": "This project is a film database; my main learning objective of this project was to learn how to get data from an external database using the fetch method, handle asynchronous requests, manage state with React hooks, and implement search functionality to enhance user experience.",
@@ -53,3 +47,12 @@
     }
   ]
 }
+/*
+    {
+      "name": "Next Media Agency",
+      "description": "This is a Wordpress website, build using elementor",
+      "status": "complete",
+      "image": "/images/next-media-agency.png",
+      "githubLink": "https://nextmediaagency.musajalloh.com/"
+    },
+*/

@@ -13,7 +13,7 @@ export default function Navbar() {
     <nav className="navigation-bar">
       {/* Logo */}
       <div className="logo">
-        <Link href="/">Musa Jalloh Testing</Link>
+        <Link href="/">Musa Jalloh</Link>
       </div>
 
       {/* Hamburger Icon */}
