@@ -1,19 +1,21 @@
 {
   "projects": [
     {
+      "name": "Sunn Park",
+      "description": "Sunn Park is a smart parking solution developed as a bachelor project for Sunnaas Hospital. Built with Next.js, Supabase, and Clerk, the app helps users reserve and manage parking spaces with ease through a responsive and intuitive interface.",
+      "status": "Complete",
+      "image": "/images/sunn_park.png",
+      "githubLink": "https://github.com/Mucino11/SUNN-PARK/tree/main/parking-app",
+      "liveLink": "https://sunn-park.vercel.app/"
+    },
+    {
       "name": "Big Lemon Restaurant",
       "description": "Portfolio project from Meta frontend developer course on Coursera, the project was build using react where the focus was on the use of components",
       "status": "Complete",
       "image": "/images/big_lemon.png",
       "githubLink": "https://github.com/Mucino11/big_lemon_new.git"
     },
-    {
-      "name": "Europris Online store redesign",
-      "description": "This school project involved redesigning Europris's online store based on our market and user research. We identified that customers often complained about the cluttered website and difficulty in finding products. Our final design prioritizes accessibility, decluttering, and creating a simple, intuitive user interface.",
-      "status": "Complete",
-      "image": "/images/ui_ux_project.png",
-      "githubLink": "https://xd.adobe.com/view/b04280ca-e612-428e-b683-7052c3bfacf3-e511/"
-    },
+
     {
       "name": "Film Database",
       "description": "This project is a film database; my main learning objective of this project was to learn how to get data from an external database using the fetch method, handle asynchronous requests, manage state with React hooks, and implement search functionality to enhance user experience.",
@@ -31,6 +33,13 @@
       "githubLink": "https://github.com/Mucino11/coup-d-etat-in-africa.git"
     },
     {
+      "name": "Europris Online store redesign",
+      "description": "This school project involved redesigning Europris's online store based on our market and user research. We identified that customers often complained about the cluttered website and difficulty in finding products. Our final design prioritizes accessibility, decluttering, and creating a simple, intuitive user interface.",
+      "status": "Complete",
+      "image": "/images/ui_ux_project.png",
+      "githubLink": "https://xd.adobe.com/view/b04280ca-e612-428e-b683-7052c3bfacf3-e511/"
+    },
+    {
       "name": "Big Lemon Restaurant",
       "description": "Portfolio project from Meta frontend developer course on Coursera, the project was build using react where the focus was on the use of components",
       "status": "Complete",
@@ -44,6 +53,14 @@
       "status": "complete",
       "image": "/images/film_database.png",
       "githubLink": "https://github.com/Mucino11/film-database.git"
+    },
+    {
+      "name": "Sunn Park",
+      "description": "Sunn Park is a smart parking solution developed as a bachelor project for Sunnaas Hospital. Built with Next.js, Supabase, and Clerk, the app helps users reserve and manage parking spaces with ease through a responsive and intuitive interface.",
+      "status": "Complete",
+      "image": "/images/sunn_park.png",
+      "githubLink": "https://github.com/Mucino11/SUNN-PARK/tree/main/parking-app",
+      "liveLink": "https://sunn-park.vercel.app/"
     }
   ]
 }
