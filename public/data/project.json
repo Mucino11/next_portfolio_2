@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "Sunn Park",
+      "name": "Sunn Park (Bachelor Project)",
       "description": "Sunn Park is a smart parking solution developed as a bachelor project for Sunnaas Hospital. Built with Next.js, Supabase, and Clerk, the app helps users reserve and manage parking spaces with ease through a responsive and intuitive interface.",
       "status": "Complete",
       "image": "/images/sunn_park.png",
